@@ -1,0 +1,165 @@
+@mixin commonStylesOfBrainDiv() {
+  position: absolute;
+  height: 12vh;
+  cursor: pointer;
+  transition: width 1.5s;
+}
+
+@mixin commonStylesOfBrainTxt {
+  font-family: normalSans;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  transition: all 1.5s;
+}
+
+.brainReligionContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+
+  &__colorDiv1 {
+    @include commonStylesOfBrainDiv();
+    top: 25vh;
+    right: 50vw;
+    background-color: #814738;
+  }
+
+  &__colorDiv2 {
+    @include commonStylesOfBrainDiv();
+    top: 37vh;
+    align-self: center;
+    background-color: #d8afa7;
+  }
+
+  &__text1 {
+    text-align: end;
+    width: 22vw;
+    // font-size: xx-large;
+    font-size: 2.5vmax;
+    @include commonStylesOfBrainTxt();
+  }
+
+  &__text2 {
+    text-align: end;
+    font-weight: 600;
+    // font-size: xxx-large;
+    font-size: 2.7vmax;
+    margin-top: 1vh;
+    @include commonStylesOfBrainTxt();
+  }
+
+  &__text3 {
+    width: 22vw;
+    // font-size: small;
+    font-size: 0.9vmax;
+    @include commonStylesOfBrainTxt();
+    @media screen and (min-width: 992px) {
+      font-size: 1.2vmax;
+    }
+  }
+
+  &__quranText1 {
+    @include commonStylesOfBrainTxt();
+    margin-left: -50vw;
+    color: #868686;
+    // font-size: xxx-large;
+    font-size: 2.7vmax;
+    margin-top: 1vh;
+  }
+
+  &__quranText2 {
+    @include commonStylesOfBrainTxt();
+    margin-left: -50vw;
+    color: #868686;
+    // font-size: x-large;
+    font-size: 1.5vmax;
+  }
+
+  &__quranText3 {
+    @include commonStylesOfBrainTxt();
+    margin-left: -50vw;
+    color: #707070;
+    // font-size: small;
+    font-size: 0.9vmax;
+    width: 22vw;
+  }
+
+  &__quranDiv {
+    background-color: white;
+    overflow: hidden;
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: scale(1.15);
+      transition: all 1s;
+    }
+  }
+
+  &__brainDiv {
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 20% 80%;
+      transform: scale(1.15);
+      transition: all 1s;
+    }
+  }
+}
+
+.brainReligionMobileContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+
+  &__brainDiv {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text1 {
+    // width: 22vw;
+    // font-size: xx-large;
+    font-size: 4vmax;
+    @include commonStylesOfBrainTxt();
+    font-family: BoldSans;
+    cursor: default;
+  }
+
+  &__text2 {
+    text-align: end;
+    font-weight: 600;
+    // font-size: xxx-large;
+    font-size: 4.3vmax;
+    margin-top: 1vh;
+    @include commonStylesOfBrainTxt();
+    cursor: default;
+  }
+
+  &__text3 {
+    width: 75vw;
+    // font-size: small;
+    font-size: 2.2vmax;
+    @include commonStylesOfBrainTxt();
+    cursor: default;
+    font-family: BoldSans;
+  }
+}

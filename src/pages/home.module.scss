@@ -1,0 +1,16 @@
+.homeContainer {
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  opacity: 1;
+  transition: all 1.5s;
+  img {
+    z-index: 999;
+  }
+  div {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}

@@ -1,0 +1,120 @@
+@mixin commonStylesOfReligionsTxt {
+  font-family: normalSans;
+  cursor: pointer;
+  transition: all 1.5s;
+  margin: 0;
+}
+
+.religionsContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f8fd;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+
+  &__txtDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__text1 {
+      font-weight: 600;
+      // font-size: xxx-large;
+      font-size: 4vmax;
+      color: #868686;
+
+      @include commonStylesOfReligionsTxt();
+    }
+
+    &__text2 {
+      align-self: center;
+      // text-align: end;
+      // font-size: x-large;
+      font-size: 2vmax;
+      color: #868686;
+      @include commonStylesOfReligionsTxt();
+      margin-bottom: 3vh;
+      font-family: BoldSans;
+    }
+
+    &__text3 {
+      width: 35vw;
+      // align-self: center;
+      // text-align: center;
+      // font-size: medium;
+      font-size: 0.9vmax;
+      color: #707070;
+      @include commonStylesOfReligionsTxt();
+    }
+  }
+
+  div {
+    width: 50vw !important;
+    height: 100vh !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+
+.religionsMobileContainer {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f5f8fd;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+
+  &__txtDiv {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__text1 {
+      // font-size: xxx-large;
+      font-size: 4vmax;
+      color: #868686;
+
+      @include commonStylesOfReligionsTxt();
+      margin-top: 10vh;
+    }
+
+    &__text2 {
+      align-self: center;
+      font-size: 2.5vmax;
+      color: #868686;
+      @include commonStylesOfReligionsTxt();
+      margin-top: 3.5vh;
+      margin-bottom: 3vh;
+      font-family: BoldSans;
+    }
+
+    &__text3 {
+      width: 75vw;
+      // align-self: center;
+      // text-align: center;
+      // font-size: medium;
+      font-size: 1.5vmax;
+      color: #707070;
+      @include commonStylesOfReligionsTxt();
+    }
+  }
+
+  img {
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: contain;
+  }
+}

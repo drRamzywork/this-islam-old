@@ -1,0 +1,40 @@
+.headerContainer {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 10;
+
+  &__headerBorder1 {
+    width: calc(12vw - 40px);
+    margin-top: 5vh;
+    margin-left: 3.5vw;
+    border-bottom: 3px white solid;
+    transition: opacity 1s;
+  }
+
+  &__thisisislam {
+    width: 150px;
+    color: white;
+    font-family: normalSans;
+    padding-top: 3vh;
+    font-weight: 500;
+    align-self: flex-end;
+    margin-bottom: -0.7vh;
+  }
+
+  &__headerBorder2 {
+    width: calc(80vw - 170px);
+    margin-top: 5vh;
+    border-bottom: 3px white solid;
+    transition: opacity 1s;
+  }
+
+  &__icon {
+    width: 23px;
+    align-self: flex-end;
+    margin-bottom: -0.5vh;
+    margin-left: 1.2vw;
+    cursor: pointer;
+  }
+}

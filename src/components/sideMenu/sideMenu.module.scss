@@ -1,0 +1,112 @@
+.sideMenu-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 3px;
+  position: fixed;
+  top: 0%;
+  left: 0;
+  z-index: 1000 !important;
+  animation: fadeIn 0.3s ease-in-out forwards;
+  background-color: white;
+
+  // animation: name duration timing-function delay iteration-count direction fill-mode;
+  &__header {
+    width: 100%;
+    height: 12.6vh;
+    background-color: white;
+    opacity: 1;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    &__adjustment {
+      width: calc(15.5vw - 40px);
+      height: 2px;
+    }
+
+    &__name {
+      width: 150px;
+      margin-top: 3.4vh;
+      font-family: normalSans;
+      font-weight: 500;
+      animation: nameTransition 0.5s ease-in-out forwards;
+      //   animation: name duration timing-function delay iteration-count direction fill-mode;
+    }
+
+    &__closeIcon {
+      width: 28px;
+      height: 28px;
+      color: #000000;
+      cursor: pointer;
+
+      position: absolute;
+      top: 44.5%;
+      right: 4.6%;
+    }
+  }
+
+  &__backgroundBody {
+    height: 87.4vh;
+    overflow-y: auto;
+    background-color: white;
+    opacity: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__body {
+    position: absolute;
+    background-color: transparent;
+    overflow-x: auto;
+    height: 87.4vh;
+    top: 12.6vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #c0c0c0;
+    font-size: 18px;
+
+    &__option {
+      display: flex;
+      width: 40%;
+      font-family: normalSans;
+      font-weight: 700;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      font-size: 2.2vmax;
+      border-bottom: 1px solid gray;
+
+      p {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@keyframes nameTransition {
+  0% {
+    margin-top: 3.4vh;
+    color: white;
+  }
+
+  100% {
+    margin-top: 5vh;
+    color: #8b8b8b;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

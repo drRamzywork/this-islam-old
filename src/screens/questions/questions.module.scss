@@ -1,0 +1,60 @@
+@mixin commonImgStyles {
+  position: absolute;
+  left: 0;
+  object-fit: cover;
+  transition: all 1.5s;
+}
+
+@mixin commonStylesOfQuestionsTxt {
+  font-family: normalSans;
+  color: white;
+  transition: all 1.5s;
+}
+
+.questionsContainer {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+
+  &__txtContainer {
+    position: absolute;
+    top: 90vh;
+    right: 10vw;
+    transition: all 1.5s;
+    text-align: end;
+
+    &__text1 {
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 4vmax;
+      line-height: 8vh;
+      @include commonStylesOfQuestionsTxt();
+    }
+
+    &__text2 {
+      cursor: pointer;
+      font-size: 2.5vmax;
+      line-height: 6vh;
+      @include commonStylesOfQuestionsTxt();
+      font-family: BoldSans;
+    }
+  }
+
+  &__skyImg {
+    @include commonImgStyles();
+    top: -5vh;
+    height: 75vh;
+    width: 100vw;
+    object-position: 25% 70%;
+    transition: all 20s;
+  }
+
+  &__standingManImg {
+    @include commonImgStyles();
+    top: 5vh;
+    height: 130vh;
+    width: 110vw;
+    object-position: 35% 80%;
+  }
+}

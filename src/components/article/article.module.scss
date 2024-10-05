@@ -1,0 +1,38 @@
+.articleContainer {
+    width: 17vw;
+
+    &__header {
+        display: grid;
+        grid-template-columns: 10% 90%;
+        align-items: center;
+        margin-bottom: 1vh;
+
+        img {
+            width: 100%;
+            object-fit: contain;
+
+        }
+
+        div {
+            margin-left: 0.5vw;
+            height: 2px;
+            background-color: white;
+        }
+    }
+
+    &__text {
+        font-family: normalSans;
+        font-size: 1vw;
+    }
+
+    &__footer {
+        margin-top: 1vh;
+        height: 2px;
+        background-color: white;
+    }
+}
+
+.mobile {
+    width: 73vw;
+    font-size: 2vh;
+}

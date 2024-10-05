@@ -1,0 +1,73 @@
+@mixin commonStylesOfQuestionsTxt {
+  font-family: normalSans;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  transition: all 1.5s;
+  // color: #647688;
+  // align-self: flex-start;
+}
+
+.environmentContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+
+  &__text1 {
+    align-self: center;
+    font-weight: 600;
+    // font-size: xxx-large;
+    font-size: 4vmax;
+    @include commonStylesOfQuestionsTxt();
+  }
+
+  &__text2 {
+    align-self: center;
+    text-align: end;
+    // font-size: xx-large;
+    font-size: 2.5vmax;
+    @include commonStylesOfQuestionsTxt();
+    font-family: BoldSans;
+  }
+
+  &__text3 {
+    // width: 35vw;
+    align-self: center;
+    text-align: center;
+    // font-size: medium;
+    font-size: 1vmax;
+    @include commonStylesOfQuestionsTxt();
+    font-family: BoldSans;
+  }
+
+  video {
+    position: absolute;
+    right: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover;
+    object-position: 20% 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobileVisibility {
+    top: 23vh; /* Adjust based on mobile design */
+    font-size: 5vh; /* Adjust based on mobile design */
+    opacity: 1;
+  }
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .desktopVisibility {
+    top: 32vh; /* Adjust based on desktop design */
+    font-size: 2.5vh; /* Adjust based on desktop design */
+    opacity: 1;
+  }
+}

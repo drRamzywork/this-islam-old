@@ -1,0 +1,340 @@
+.frameContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100vw;
+
+  &__frameBorder1 {
+    height: 90vh;
+    // padding-left: 3.45vw;
+    border-right: 3px white solid;
+    margin-top: calc(5vh + 2px);
+    flex: 0;
+    margin-left: 3.48vw;
+  }
+
+  &__frameBorder2 {
+    width: calc(12vw - 40px);
+    border-bottom: 3px white solid;
+    flex: 3;
+  }
+
+  &__fiveDots {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 150px;
+    margin-bottom: -10px;
+    flex: 3;
+    transition: 1s opacity;
+  }
+
+  &__frameBorder3 {
+    // width: calc(83vw - 170px + 46px);
+    // width: calc(76vw - 220px);
+    flex: 20;
+    // width: calc(74vw - 170px + 46px);
+    border-bottom: 3px white solid;
+  }
+
+  &__logo {
+    // width: 9%;
+    align-self: flex-end;
+    margin-left: 1.2vw;
+    flex: 1;
+    margin-right: 1.7vw;
+  }
+
+  &__frameBorder4 {
+    height: 75vh;
+    // margin-left: -1px;
+    margin-right: 2.2vw;
+    margin-left: -1.8vw;
+    border-right: 3px white solid;
+    margin-top: 4.5vh;
+    flex: 0;
+  }
+}
+
+.fiveDots {
+  background-color: white;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  margin: 6px;
+  margin-bottom: 5px;
+}
+
+.mobileFiveDots {
+  position: absolute;
+  bottom: 4vh;
+  left: 10%;
+  display: flex;
+  align-self: center;
+  transition: 1s opacity;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  background-color: #c3a0b9;
+}
+
+@font-face {
+  font-family: "normalSans";
+  src: url("../src/assets/Alphotoshop.com_TheSans-Bold.otf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BoldSans";
+  src: url("../src/assets/Alphotoshop.com_TheSans-Plain (2).otf")
+    format("truetype");
+  font-weight: 400;
+}
+
+.App {
+  text-align: center;
+  overflow-x: hidden;
+  padding: 0;
+  z-index: 10;
+}
+
+.App.ur *,
+.App.fa * {
+  font-family: "__req3a_2ea2e2", "__req3a_Fallback_2ea2e2" !important;
+}
+
+// .App::-webkit-scrollbar {
+//   width: 12px;
+// }
+
+// .App::-webkit-scrollbar-track {
+//   background-color: transparent;
+// }
+// .App::-webkit-scrollbar-thumb {
+//   border-radius: 3px;
+//   background-color: #c3a0b9;
+// }
+
+@mixin commonStylesOfBrainDiv() {
+  position: absolute;
+  height: 12vh;
+  cursor: pointer;
+  transition: width 1.5s;
+}
+
+@mixin commonStylesOfBrainTxt {
+  font-family: normalSans;
+  position: absolute;
+  cursor: pointer;
+  color: white;
+  transition: all 1.5s;
+}
+
+.brainReligionContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+
+  &__colorDiv1 {
+    @include commonStylesOfBrainDiv();
+    top: 25vh;
+    right: 50vw;
+    background-color: #814738;
+  }
+
+  &__colorDiv2 {
+    @include commonStylesOfBrainDiv();
+    top: 37vh;
+    align-self: center;
+    background-color: #d8afa7;
+  }
+
+  &__text1 {
+    text-align: end;
+    width: 22vw;
+    // font-size: xx-large;
+    font-size: 2.5vmax;
+    @include commonStylesOfBrainTxt();
+  }
+
+  &__text2 {
+    text-align: end;
+    font-weight: 600;
+    // font-size: xxx-large;
+    font-size: 2.7vmax;
+    margin-top: 1vh;
+    @include commonStylesOfBrainTxt();
+  }
+
+  &__text3 {
+    width: 22vw;
+    // font-size: small;
+    font-size: 0.9vmax;
+    @include commonStylesOfBrainTxt();
+  }
+
+  &__quranText1 {
+    @include commonStylesOfBrainTxt();
+    margin-left: -50vw;
+    color: #868686;
+    // font-size: xxx-large;
+    font-size: 2.7vmax;
+    margin-top: 1vh;
+  }
+
+  &__quranText2 {
+    @include commonStylesOfBrainTxt();
+    margin-left: -50vw;
+    color: #868686;
+    // font-size: x-large;
+    font-size: 1.5vmax;
+  }
+
+  &__quranText3 {
+    @include commonStylesOfBrainTxt();
+    margin-left: -50vw;
+    color: #707070;
+    // font-size: small;
+    font-size: 0.9vmax;
+    width: 22vw;
+  }
+
+  &__quranDiv {
+    background-color: white;
+    overflow: hidden;
+    width: 50%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      transform: scale(1.15);
+      transition: all 1s;
+    }
+  }
+
+  &__brainDiv {
+    width: 50%;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 20% 80%;
+      transform: scale(1.15);
+      transition: all 1s;
+    }
+  }
+}
+
+.brainReligionMobileContainer {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  justify-content: center;
+
+  &__brainDiv {
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text1 {
+    // width: 22vw;
+    // font-size: xx-large;
+    font-size: 4vmax;
+    @include commonStylesOfBrainTxt();
+    font-family: BoldSans;
+    cursor: default;
+  }
+
+  &__text2 {
+    text-align: end;
+    font-weight: 600;
+    // font-size: xxx-large;
+    font-size: 4.3vmax;
+    margin-top: 1vh;
+    @include commonStylesOfBrainTxt();
+    cursor: default;
+  }
+
+  &__text3 {
+    width: 75vw;
+    // font-size: small;
+    font-size: 2.2vmax;
+    @include commonStylesOfBrainTxt();
+    cursor: default;
+    font-family: BoldSans;
+  }
+}
+
+// Home.js
+.homeContainer {
+  //   overflow-y: scroll;
+  //   overflow-x: hidden;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  opacity: 1;
+  transition: all 1.5s;
+
+  div {
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+  }
+}
+
+#swiper-carosel {
+  height: 100vh;
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+// Loader
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  font-size: 20px;
+  color: #333;
+}

@@ -1,0 +1,76 @@
+.frameContainer {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100vw;
+
+  &__frameBorder1 {
+    height: 90vh;
+    // padding-left: 3.45vw;
+    border-right: 3px white solid;
+    margin-top: calc(5vh + 2px);
+    flex: 0;
+    margin-left: 3.48vw;
+  }
+
+  &__frameBorder2 {
+    width: calc(12vw - 40px);
+    border-bottom: 3px white solid;
+    flex: 3;
+  }
+
+  &__fiveDots {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 150px;
+    margin-bottom: -10px;
+    flex: 3;
+    transition: 1s opacity;
+  }
+
+  &__frameBorder3 {
+    // width: calc(83vw - 170px + 46px);
+    // width: calc(76vw - 220px);
+    flex: 20;
+    // width: calc(74vw - 170px + 46px);
+    border-bottom: 3px white solid;
+  }
+
+  &__logo {
+    // width: 9%;
+    align-self: flex-end;
+    margin-left: 1.2vw;
+    flex: 1;
+    margin-right: 1.7vw;
+  }
+
+  &__frameBorder4 {
+    height: 75vh;
+    // margin-left: -1px;
+    margin-right: 2.2vw;
+    margin-left: -1.8vw;
+    border-right: 3px white solid;
+    margin-top: 4.5vh;
+    flex: 0;
+  }
+}
+
+.fiveDots {
+  background-color: white;
+  opacity: 0.3;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  margin: 6px;
+  margin-bottom: 5px;
+}
+
+.mobileFiveDots {
+  position: absolute;
+  bottom: 4vh;
+  left: 10%;
+  display: flex;
+  align-self: center;
+  transition: 1s opacity;
+}
