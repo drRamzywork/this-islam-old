@@ -20,6 +20,7 @@ const Index = ({ languageValues, language, allLanguages, siteInfo }) => {
       "query-input": "required name=search_term_string",
     },
   };
+  OP;
   return (
     <>
       <Head>
